@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Luh'Art – Onde ideis ganham forma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #1a1a2e, #16213e);
+      color: #fff;
+    }
+
+    /* Menu fixo */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0f3460;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    header {
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .moon {
+      width: 80px;
+      height: 80px;
+      background: #f1f1f1;
+      border-radius: 50%;
+      box-shadow: -15px -15px 0 0 #1a1a2e inset;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-family: 'Great Vibes', cursive;
+      margin: 0;
+      color: #ffd700;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ffd700;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .servico {
+      background-color: #22223b;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(255,255,255,0.1);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1da851;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ffd700;
+      color: #1a1a2e;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e5c100;
+    }
+
+    footer {
+      background-color: #0f3460;
+      padding: 20px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+
+    footer span {
+      color: #ffd700;
+    }
+
+    body::before {
+      content: '';
+      display: block;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="moon"></div>
+    <h1>Luh'Art</h1>
+    <p>Onde ideias ganham forma</p>
+  </header>
+
+  <!-- Sobre Mim -->
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou apaixonada por criar com propósito. Cada peça personalizada é feita com carinho, e cada Bíblia restaurada é tratada com o respeito e o cuidado que a Palavra merece. Meu desejo é que cada criação leve uma mensagem de fé, amor e beleza.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2>O que Eu Faço</h2>
+    <div class="servico">
+      <h3>✨ Personalizados</h3>
+      <p>Criações únicas para momentos especiais: convites, lembranças, artes decorativas e mais.</p>
+    </div>
+    <div class="servico">
+      <h3>📖 Restauração de Bíblias</h3>
+      <p>Renovo Bíblias com encadernações artesanais e design delicado, mantendo viva a Palavra que transforma vidas.</p>
+    </div>
+    <div class="servico">
+      <h3>🕊️ Arte com Propósito</h3>
+      <p>Projetos criativos com mensagens bíblicas e inspiração cristã, para edificar e embelezar.</p>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="https://via.placeholder.com/300x200?text=Trabalho+1" alt="Trabalho 1">
+      <img src="https://via.placeholder.com/300x200?text=Trabalho+2" alt="Trabalho 2">
+      <img src="https://via.placeholder.com/300x200?text=Trabalho+3" alt="Trabalho 3">
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Fale Comigo</h2>
+    <p>Tem um pedido especial? Envie sua mensagem ou fale direto pelo WhatsApp:</p>
+    <a class="whatsapp-button" href="https://wa.me/5591982120998" target="_blank">
+      📲 Fale pelo WhatsApp
+    </a>
+
+    <form action="https://formsubmit.co/yasminguedes26@gmail.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>"Tudo quanto fizerem, façam de todo o coração, como para o Senhor, e não para homens." <br><span>– Colossenses 3:23</span></p>
+  </footer>
+
+</body>
+</html>
